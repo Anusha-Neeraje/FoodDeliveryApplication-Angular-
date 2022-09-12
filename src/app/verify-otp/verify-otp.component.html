@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+</head>
+<body>
+<div class="container">
+  <section id="content">
+    <form>
+      <h1>OTP Verification</h1>
+      <div>
+        <input type="text" placeholder="Enter OTP Here" required="" id="otp" name="otp" formControlName="otp"/>
+      </div>
+      <div>
+        <input data-bs-toggle="modal"
+        data-bs-target="#exampleModal" type="submit" value="Verify" />
+      </div>
+    </form><!-- form -->
+    
+  </section><!-- content -->
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="profileForm" (ngSubmit)="ChangePassword()">
+                    <div class="mb-3">
+                        <input type="password" formControlName="password" class="form-control"
+                            placeholder="Your new Password Here" id="password" name="password" required="required">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Change Password</button>
+            </div>
+        </div>
+    </div>
+  </div>

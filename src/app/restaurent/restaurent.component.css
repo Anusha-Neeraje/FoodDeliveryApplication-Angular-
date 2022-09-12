@@ -1,0 +1,97 @@
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://5.imimg.com/data5/YS/TA/MY-13049124/restaurant-wallpaper-design-500x500.jpg);
+    position: relative;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background-color: #e67a7a;
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td .btn{
+    width: 110px;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    left: 40%;
+    border-radius: 30px;
+    color: #ffd6d6;
+    background-color: #e67a7a;
+}
+.table tbody tr td .btn1{
+    width: 110px;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    left: 40%;
+    border-radius: 30px;
+    color: #555;
+    background-color: #61df91;
+}

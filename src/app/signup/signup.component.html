@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Registration</title>
+</head>
+<body>
+<div class="container">
+  <section id="content">
+    <form  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <h1>Registration Form</h1>
+      <div>
+        <input type="text" placeholder="Name" id="name" name="name" formControlName="name"/>
+         <div class="err" *ngIf="f['name'].touched && f['name'].errors">
+          <div *ngIf="f['name'].errors && f['name'].errors['required']">User Name Required</div>
+         </div> 
+      </div>
+      <div>
+        <input type="email" placeholder="Email" id="email" name="email" formControlName="email"/>
+        <div class="err" *ngIf="f['name'].touched && f['name'].errors">
+          <div *ngIf="f['email'].errors && f['email'].errors['required']">User Email Required</div>
+          <div *ngIf="f['email'].errors && f['email'].errors['email']">Enter a Valid Email id</div>
+        </div> 
+      </div>
+      <div>
+        <input type="password" placeholder="Password" id="password" name="password" formControlName="password" />
+        <div class="err" *ngIf="f['name'].touched && f['name'].errors">
+          <div *ngIf="f['password'].errors && f['password'].errors['required']">Password Required</div>
+          <div *ngIf="f['password'].errors && f['password'].errors['minLength']">Minimum 6 Characters Required</div>
+        </div> 
+      </div>
+      <div>
+        <input type="password" placeholder="Confirm Password" id="cpassword" name="cpassword" formControlName="cpassword"/>
+        <div class="err" *ngIf="f['name'].touched && f['name'].errors">
+          <div *ngIf="f['cpassword'].errors && f['cpassword'].errors['required']">Confirm Password Required</div>
+          <div *ngIf="f['cpassword'].errors && f['cpassword'].errors['MustMatch']">Must Match with Password</div>
+        </div> 
+      </div>
+      <div>
+        <input type="submit" value="Sign Up"/>
+        <a href="/login">Login</a>
+      </div>
+    </form>
+    
+  </section><!-- content -->
+</div><!-- container -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+nav{
+    background-color: rgb(26, 24, 24);
+    width: 800;
+}
+h2{
+    color: wheat;
+}
+.card{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 400px;
+    padding: 45px;
+    position: absolute;
+    top: 20%;
+    left: 74%;
+}
+hr{
+    color: orangered;
+}
